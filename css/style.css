@@ -1,0 +1,108 @@
+:root {
+  --primary-glow-color: #00ffff;
+  --primary-button-text: #000;
+  --dark-bg-1: #121212;
+  --dark-bg-2: #1e1e1e;
+  --dark-bg-3: #2a2a2a;
+  --text-color: #e0e0e0;
+  --border-color: #333;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg-1);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+
+header.bg-dark {
+  background-color: var(--dark-bg-2) !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+footer {
+  color: #aaa;
+}
+
+footer a,
+#auth-container a {
+  color: var(--primary-glow-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+footer a:hover,
+#auth-container a:hover {
+  color: #ffffff;
+}
+
+.card {
+  background-color: var(--dark-bg-2);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px -5px var(--primary-glow-color);
+}
+
+.card-header {
+  background-color: var(--dark-bg-3);
+  border-bottom: 1px solid var(--border-color);
+  color: #ffffff;
+}
+
+.list-group-item {
+  background-color: var(--dark-bg-3);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.form-control {
+  background-color: var(--dark-bg-3);
+  color: var(--text-color);
+  border: 1px solid #444;
+}
+
+.form-control:focus {
+  background-color: var(--dark-bg-3);
+  color: var(--text-color);
+  border-color: var(--primary-glow-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 255, 0.25);
+}
+
+.form-label {
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-glow-color);
+  border-color: var(--primary-glow-color);
+  color: var(--primary-button-text);
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #2effff;
+  border-color: #2effff;
+  color: var(--primary-button-text);
+  box-shadow: 0 0 12px -2px var(--primary-glow-color);
+}
+
+.chart-container {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+}
+p {
+  color: #ffffff;
+}
